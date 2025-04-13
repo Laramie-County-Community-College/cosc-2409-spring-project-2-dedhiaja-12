@@ -32,7 +32,6 @@ def analyze_log_file(filename="access.log"):
             # Count errors (status codes 4xx and 5xx)
             if int(status_code) >= 400:
                 error_count += 1
-
     # Print the summary
     print(f"Total Errors (4xx and 5xx): {error_count}")
     print(f"Unique IP Addresses: {len(unique_ips)}")
@@ -48,6 +47,7 @@ def extract_log_data(line):
         return timestamp, ip, url, status_code
     else:
         return None, None, None, None
+
 # Analyze the log file
 if __name__ == "__main__":
     analyze_log_file()
