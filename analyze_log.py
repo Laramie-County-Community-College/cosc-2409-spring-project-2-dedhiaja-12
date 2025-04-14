@@ -1,6 +1,5 @@
 import re
 import os
-
 def analyze_log_file(filename="access.log"):
     """Analyzes a log file and extracts information.
 
