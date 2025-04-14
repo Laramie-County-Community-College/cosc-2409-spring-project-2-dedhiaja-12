@@ -1,7 +1,6 @@
 import re
 import random
 import datetime
-
 def generate_log_entry(ip_address, url, status_code):
     """
     Generates a single log entry line in the following format:
